@@ -10,81 +10,81 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 switch ($page) {
 
-    // 🏠 ГЛАВНАЯ
+    //  ГЛАВНАЯ
     case 'home':
         require __DIR__ . '/src/Controllers/home.php';
         require __DIR__ . '/templates/index.php';
         break;
 
-    // 🔐 LOGIN
+    //  LOGIN
     case 'login':
         require __DIR__ . '/src/Controllers/login.php';
         require __DIR__ . '/templates/login.php';
         break;
 
-    // 📝 REGISTER
+    //  REGISTER
     case 'register':
         require __DIR__ . '/src/Controllers/register.php';
         require __DIR__ . '/templates/register.php';
         break;
 
-    // 🚪 LOGOUT
+    //  LOGOUT
     case 'logout':
         require __DIR__ . '/src/Controllers/logout.php';
         break;
 
-    // ➕ ADD ITEM
+    //  ADD ITEM
     case 'add':
         require __DIR__ . '/src/Controllers/add_item.php';
         require __DIR__ . '/templates/add_item.php';
         break;
 
-    // ✏️ EDIT
+    //  EDIT
     case 'edit':
         require __DIR__ . '/src/Controllers/edit_item.php';
         require __DIR__ . '/templates/edit_item.php';
         break;
 
-    // 🗑 DELETE
+    //  DELETE
     case 'delete':
         require __DIR__ . '/src/Controllers/delete_item.php';
         break;
 
-    // 📦 ADMIN PANEL
+    //  ADMIN PANEL
     case 'admin':
         require __DIR__ . '/src/Controllers/admin_panel.php';
         require __DIR__ . '/templates/admin_panel.php';
         break;
 
-    // 👤 PROFILE
+    //  PROFILE
     case 'profile':
         require __DIR__ . '/src/Controllers/profile.php';
         require __DIR__ . '/templates/profile.php';
         break;
 
-    // 🔑 PASSWORD CHANGE
+    //  PASSWORD CHANGE
     case 'change_password':
         require __DIR__ . '/src/Controllers/change_password.php';
         require __DIR__ . '/templates/change_password.php';
         break;
 
-    // 📤 UPLOAD IMAGE
+    //  UPLOAD IMAGE
     case 'upload':
         require __DIR__ . '/src/Controllers/upload.php';
         break;
 
-    // 🛒 CREATE ORDER
+    //  CREATE ORDER
     case 'make_order':
         require __DIR__ . '/src/Controllers/make_order.php';
         break;
 
-    // 🖥 EQUIPMENT CARD
+    //  EQUIPMENT CARD
     case 'equipment':
         require __DIR__ . '/src/Controllers/equipment.php';
         require __DIR__ . '/templates/equipment.php';
         break;
 
-    // 📌 DEFAULT
+    //  DEFAULT
     default:
         echo "404 - Page not found";
         break;
